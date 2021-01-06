@@ -1,5 +1,4 @@
-class SessionsController < ActionController::Base
+class SessionsController < ActionController
   def new
-    # @session = Session.new
   end
 end
