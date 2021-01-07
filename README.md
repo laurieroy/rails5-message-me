@@ -13,7 +13,9 @@ To start the server: `rails s`
 
 To seed the database with 5 users: `rails db.seed`
 
+<!--
 Start another private instance of the browser to have a second user, or use another browser, e.g., one on chrome and one on safari
+-->
 
 
 <!--
