@@ -4,13 +4,18 @@
 	<div class="ui dropdown item">
 		Account <i class="dropdown icon"></i>
 		<div class="menu">
-			<%= link_to 'Log out', '#', method: :delete, class:"item",
-				data: { confirm: "Are you sure?" } %>
-			<%= link_to 'Log in', 'login_path', class:"item" %>
-			<%= link_to 'Sign up', '#', class:"item" %>
+			<% if logged_in? %>
+				<%= link_to 'Log out', logout_path, method: :delete, class:"item",
+					data: { confirm: "Are you sure?" } %>
+			<% else %>
+				<%= link_to 'Log in', login_path, class:"item" %>
+				<%= link_to 'Sign up', 'signup_path', class:"item" %>
+			<% end %>
 		</div>
 	</div>
-	<div class="item">
-			<%= link_to 'Sign up', '#', class: "ui primary button" %>
-	</div>
+	<% if !logged_in? %>
+		<div class="item">
+				<%= link_to 'Log in', login_path, class: "ui primary button" %>
+		</div>
+	<% end %>
 </div>
