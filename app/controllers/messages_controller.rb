@@ -1,9 +1,10 @@
 class MessagesController <  ApplicationController
-  # before_action :require_user
+  before_action :require_user
+  
   def index
     @messages = Message.all
   end
-  
+
   def show
   end
   # Message.create(body: "Godfather.", user: User.find_by(id: 4))

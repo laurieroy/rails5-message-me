@@ -3,7 +3,7 @@ This is a simple chatroom app using ActionCable (WebSocket protocol) and login/o
 
  This is the second app built in Mashrur Hossain's Complete Ruby on Rails Developer Course Jan 2021. 
  
- It is built using Ruby 2.6.3 and Rails 5.2.4, SQLite3 for the dev db and PostGres for dev. UI is SemanticUI
+ It is built using Ruby 2.6.3 and Rails 5.2.4, SQLite3 for the dev db and PostgreSQL for dev. Front-end is SemanticUI
 
 INSTRUCTIONS - Terminal commands
 
@@ -17,6 +17,17 @@ To seed the database with 5 users: `rails db.seed`
 Start another private instance of the browser to have a second user, or use another browser, e.g., one on chrome and one on safari
 -->
 
+DEVELOPMENT STEPS
+* Add Root, Login routes
+* Install Semantic_UI for the front-end
+* Add navigation menu
+* Enable dropdown functionality (JS)
+* Make and add favicon
+* Build Chatroom homepage, login
+* Build user, message resources
+* Add from-scatch authentication system
+* Restrict routes at the controller level using before_action
+* Enable flash messages
 
 <!--
 This README would normally document whatever steps are necessary to get the
