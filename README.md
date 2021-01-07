@@ -28,6 +28,8 @@ DEVELOPMENT STEPS
 * Add from-scatch authentication system
 * Restrict routes at the controller level using before_action
 * Enable flash messages
+* Add message from UI
+	* Add message form, add post route to index, add index and create actions to message controller
 
 <!--
 This README would normally document whatever steps are necessary to get the
