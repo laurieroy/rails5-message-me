@@ -30,7 +30,18 @@ DEVELOPMENT STEPS
 * Enable flash messages
 * Add message from UI
 	* Add message form, add post route to index, add index and create actions to message controller
+* Add ActionCable for live messaging
+* Clean up the styling
+	* Add a scrollbar
+	* Limit messages to the last 20 using a custom scope
+	* Submit message using enter, hide button
 
+### TODO:
+* Add in a list of friends
+* Add channels
+* Add name to navbar
+* Setup Redis for Heroku
+* setup config for Heroku
 <!--
 This README would normally document whatever steps are necessary to get the
 application up and running.
